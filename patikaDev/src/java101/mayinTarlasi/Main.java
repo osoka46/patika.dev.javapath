@@ -1,138 +1,51 @@
-package java101.mayinTarlasi;
+import java.util.Random;
 import java.util.Scanner;
-import java.lang.Math;
 
 public class Main {
+
     public static void main(String[] args) {
-
-        boolean isWin=true;
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Satir giriniz: ");
-        int satir=scanner.nextInt();
-        System.out.print("Sutun giriniz: ");
-        int sutun=scanner.nextInt();
+        Scanner input = new Scanner(System.in);
+        int right = 3;
 
 
-        String [][] arr=new String [satir][sutun];
-        String [][] arrMayin=new String [satir][sutun];
+        System.out.println("Mayin tarlasi oyununa hosgeldiniz.");
 
-        for (int i = 0; i < satir; i++) {
-            for (int j = 0; j <sutun; j++) {
+        System.out.println("tarlanin satiri icin pozitif tamsayi giriniz:");
+        String row = input.nextLine();
 
-                arr[i][j]="-";
-                arrMayin[i][j]="-";
-                System.out.print(arr[i][j]+" ");
+        System.out.println("tarlanin sutunu icin pozitif tamsayi giriniz:");
+        String col = input.nextLine();
+
+        KontrolSinifi objeKontrolSinifi = new KontrolSinifi(row, col);
+
+
+        while (right != 0) {
+
+            if (!objeKontrolSinifi.isDigit(row, col)) {
+                System.out.println("uygun degil. tekrar deneyebilirsiniz " + right + " hakkiniz kaldi");
+                System.out.println("tarlanin boyutlari icin satir sayisi:");
+                row = input.nextLine();
+                System.out.println("tarlanin boyutlari icin sutun sayisi:");
+                col = input.nextLine();
+                right--;
+                if (right == 0) {
+                    System.out.println("oyun baslatilamadi.");
+                }
             }
-            System.out.println();
+
+            if (objeKontrolSinifi.isDigit(row, col)) {
+
+                int row1 = Integer.parseInt(row);
+                int col1 = Integer.parseInt(col);
+                MineSweeper objeMineSweeper = new MineSweeper(row1, col1);
+
+                objeMineSweeper.run();
+
+
+            }
         }
-
-        int mayinAdedi=satir*sutun/4;
-
-        for (int i = 0; i <mayinAdedi ; i++) {
-
-            int sayi1=(int) Math.floor(Math.random()*satir) ;
-            int sayi2=(int) Math.floor(Math.random()*sutun) ;
-
-            arrMayin[sayi1][sayi2]="*";
-        }
-
-        int hamle=0;
-
-        do {
-            System.out.println("Satır/sütün seçiniz: ");
-            int s1= s1 = scanner.nextInt();
-            int s2=s2=scanner.nextInt();
-
-            try {
-
-            hamle++;
-            if(arrMayin[s1][s2].equals("*")){
-                System.out.println("KAYBETTİNİZ");
-                for (int i = 0; i < satir; i++) {
-                    for (int j = 0; j < sutun; j++) {
-                        System.out.print(arrMayin[i][j] + " ");
-                    }
-                    System.out.println();
-                }
-
-                isWin=false;
-            } else if(hamle>=(satir*sutun-mayinAdedi)){
-                System.out.println("KAZANDINIZ");
-                break;
-            }else{
-                int count=0;
-
-
-                try {
-                    if(arrMayin[s1][s2+1].equals("*")){
-                        count++;
-                    }
-                } catch (Exception e) {
-
-                }
-                try {
-                    if(arrMayin[s1][s2-1].equals("*")){
-                        count++;
-                    }
-                } catch (Exception e) {
-
-                }
-                try {
-                    if(arrMayin[s1+1][s2].equals("*")){
-                        count++;
-                    }
-                } catch (Exception e) {
-
-                }
-                try {
-                    if(arrMayin[s1-1][s2].equals("*")){
-                        count++;
-                    }
-                } catch (Exception e) {
-
-                }
-                try {
-                    if(arrMayin[s1+1][s2+1].equals("*")){
-                        count++;
-                    }
-                } catch (Exception e) {
-
-                }
-                try {
-                    if(arrMayin[s1-1][s2-1].equals("*")){
-                        count++;
-                    }
-                } catch (Exception e) {
-
-                }
-                try {
-                    if(arrMayin[s1-1][s2+1].equals("*")){
-                        count++;
-                    }
-                } catch (Exception e) {
-
-                }
-                try {
-                    if(arrMayin[s1+1][s2-1].equals("*")){
-                        count++;
-                    }
-                } catch (Exception e) {
-
-                }
-                arr[s1][s2]=String.valueOf(count);
-                for (int i = 0; i < satir; i++) {
-                    for (int j = 0; j < sutun; j++) {
-                        System.out.print(arr[i][j] + " ");
-                    }
-                    System.out.println();
-                }
-            }
-            } catch (Exception e) {
-                System.err.println("Index dışına çıktınız");
-            }
-
-        }while(isWin);
-
     }
 }
+
+
+
