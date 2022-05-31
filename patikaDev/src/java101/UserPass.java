@@ -1,6 +1,8 @@
+package java101;
+
 import java.util.Scanner;
 
-public class main {
+public class UserPass {
     public static void main(String[] args) {
         String sfr="eSifre",ySifre,deneme,deneme2;
         Scanner girdi=new Scanner(System.in);

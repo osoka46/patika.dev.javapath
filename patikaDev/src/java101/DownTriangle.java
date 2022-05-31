@@ -1,6 +1,8 @@
+package java101;
+
 import java.util.Scanner;
 
-public class main {
+public class DownTriangle {
     public static void main(String[] args) {
         Scanner girdi=new Scanner(System.in);
         System.out.println("sayi giriniz:");

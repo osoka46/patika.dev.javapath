@@ -1,4 +1,4 @@
-/*//while loop
+package java101;/*//while loop
 
 import java.util.Scanner;
 
@@ -95,7 +95,7 @@ public class main {
 
 import java.util.Scanner;
 
-public class main {
+public class CalculatePow {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int x, y;

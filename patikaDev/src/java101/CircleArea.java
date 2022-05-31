@@ -1,7 +1,9 @@
+package java101;
+
 import java.lang.Math;
 import java.util.Scanner;
 
-public class main {
+public class CircleArea {
 
     public static void main(String[] args) {
         double yariCap,alan,cevre,pi=3.14;

@@ -1,6 +1,8 @@
+package java101;
+
 import java.util.Scanner;
 
-public class main {
+public class PassClass {
     public static void main(String[] args) {
       /*  int mt, trk, fzk, km, muz;
         double ortalama;

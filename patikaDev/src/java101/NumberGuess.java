@@ -1,8 +1,10 @@
+package java101;
+
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class NumberGuess {
 
     public static void main(String[] args) {
         int right=0;

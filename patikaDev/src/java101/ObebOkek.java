@@ -1,7 +1,9 @@
+package java101;
+
 import java.util.Scanner;
 import java.util.WeakHashMap;
 
-public class main {
+public class ObebOkek {
     public static void main(String[] args) {
         Scanner girdi = new Scanner(System.in);
         int ebob = 1, ekok = 1;

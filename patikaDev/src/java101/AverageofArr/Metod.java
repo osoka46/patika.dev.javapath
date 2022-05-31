@@ -1,3 +1,5 @@
+package java101.AverageofArr;
+
 public class Metod {
 
 

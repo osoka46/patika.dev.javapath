@@ -1,3 +1,5 @@
+package java101;
+
 import javax.lang.model.util.SimpleElementVisitor8;
 import java.util.Scanner;
 
@@ -34,7 +36,7 @@ public class main {
 
     }
 }*/
-public class main {
+public class OddNumbers {
     public static void main(String[] args) {
         Scanner girdi = new Scanner(System.in);
         int input, sum=0;

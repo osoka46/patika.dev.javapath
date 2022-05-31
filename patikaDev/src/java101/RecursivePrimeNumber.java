@@ -1,6 +1,8 @@
+package java101;
+
 import java.util.Scanner;
 
-public class main {
+public class RecursivePrimeNumber {
     static boolean isPrineNumber(int a, int b) {
         //girilen sayi 2den kucukse false
         if (a < 2)

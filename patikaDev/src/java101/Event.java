@@ -1,6 +1,8 @@
+package java101;
+
 import java.util.Scanner;
 
-public class main {
+public class Event {
     public static void main(String[] args) {
         double sicaklik;
         Scanner girdi = new Scanner(System.in);

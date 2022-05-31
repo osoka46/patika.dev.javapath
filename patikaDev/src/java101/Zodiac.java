@@ -1,4 +1,4 @@
-/*
+package java101;/*
 import java.util.Scanner;
 
 public class main {
@@ -54,7 +54,7 @@ public class main {
 
 import java.util.Scanner;
 
-public class main {
+public class Zodiac {
     public static void main(String[] args) {
         String ay;
         int gun;

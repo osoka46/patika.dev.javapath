@@ -1,6 +1,8 @@
+package java101;
+
 import java.util.Scanner;
 
-public class Main {
+public class LeapYear {
     public static void main(String[] args) {
         Scanner girdi = new Scanner(System.in);
         int year;

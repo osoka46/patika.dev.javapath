@@ -1,3 +1,5 @@
+package java101;
+
 import java.util.Scanner;
 import java.util.concurrent.CountDownLatch;
 
@@ -89,7 +91,7 @@ public class main {
     }
 }
 */
-public class main {
+public class EvenNumber {
 
     public static void main(String[] args) {
         Scanner girdi = new Scanner(System.in);

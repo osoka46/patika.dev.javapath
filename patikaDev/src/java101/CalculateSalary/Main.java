@@ -1,4 +1,4 @@
-package java101.src;
+package java101.CalculateSalary;
 public class Main {
 
     public static void main(String[] args) {

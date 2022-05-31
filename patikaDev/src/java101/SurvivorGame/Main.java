@@ -1,3 +1,5 @@
+package java101.SurvivorGame;
+
 import java.awt.*;
 import java.util.Arrays;
 

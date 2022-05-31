@@ -1,6 +1,8 @@
+package java101;
+
 import java.util.Scanner;
 
-public class main {
+public class CalculatorI {
     public static void main(String[] args) {
         int a, b, islem;
         Scanner girdi = new Scanner(System.in);

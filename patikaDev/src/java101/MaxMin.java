@@ -1,3 +1,5 @@
+package java101;
+
 import java.util.Scanner;
 
 /*import java.util.*;
@@ -24,7 +26,7 @@ public class Collection {
         System.out.println("min sayi:"+min);
     }
 }*/
-public class Collection {
+public class MaxMin {
     public static void main(String[] args) {
         Scanner girdi = new Scanner(System.in);
         int max=0, min=0, count, number;

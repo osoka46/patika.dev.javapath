@@ -1,7 +1,9 @@
+package java101;
+
 import java.util.Scanner;
 import java.util.SortedMap;
 
-public class main {
+public class Palidron {
 
     static boolean isBoolean(int number) {
         int tempNumber = number, lastNumber, reverseNumber = 0;

@@ -1,6 +1,8 @@
+package java101;
+
 import java.util.Scanner;
 
-public class main {
+public class BodyIndex {
     public static void main(String[] args) {
         double kilo,boy,endeks,boyMetreCinsi;
         Scanner girdi=new Scanner(System.in);

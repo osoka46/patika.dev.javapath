@@ -1,4 +1,4 @@
-/*
+package java101;/*
 import java.util.Scanner;
 
 public class main {
@@ -77,7 +77,7 @@ public class main {
 
 import java.util.Scanner;
 
-public class main {
+public class ATM {
     public static void main(String[] args) {
         Scanner girdi = new Scanner(System.in);
         int right = 3, balance = 1500;

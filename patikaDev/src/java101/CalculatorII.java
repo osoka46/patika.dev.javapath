@@ -1,6 +1,8 @@
+package java101;
+
 import java.util.Scanner;
 
-public class main {
+public class CalculatorII {
     static int toplama(int a, int b) {
         int result = a + b;
         System.out.println("sonuc:" + result);

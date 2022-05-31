@@ -1,6 +1,8 @@
+package java101;
+
 import java.lang.Math;
 import java.util.Scanner;
-public class main {
+public class TriangleArea {
 
 
     public static void main(String[] args) {

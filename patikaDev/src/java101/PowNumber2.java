@@ -1,4 +1,4 @@
-/*import java.util.Scanner;
+package java101;/*import java.util.Scanner;
 
 *//*
 
@@ -48,7 +48,7 @@ public class main {
 
 import java.util.Scanner;
 
-public class main {
+public class PowNumber2 {
     public static void main(String[] args) {
         Scanner girdi=new Scanner(System.in);
 

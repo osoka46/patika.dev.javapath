@@ -1,3 +1,5 @@
+package java101.AverageofArr;
+
 import java.util.Scanner;
 
 public class Main {

@@ -1,3 +1,5 @@
+package java101.mayinTarlasi;
+
 public class KontrolSinifi {
     String girdi1;
     String girdi2;

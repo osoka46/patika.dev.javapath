@@ -1,6 +1,8 @@
+package java101;
+
 import java.util.Scanner;
 
-public class main {
+public class RecursivePow {
     static int usAlma(int a,int b)
     {
         if (b==0)

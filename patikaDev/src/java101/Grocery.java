@@ -1,6 +1,8 @@
+package java101;
+
 import java.util.Scanner;
 
-public class main {
+public class Grocery {
     public static void main(String[] args) {
         int Armt,Elma,Dmts,Mz,Ptlcn;
         double aFiyat=2.14,eFiyat=3.67,dFiyat=1.11,mFiyat=0.95,pFiyat=5,Ucret;

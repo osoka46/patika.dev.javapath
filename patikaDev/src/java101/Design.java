@@ -1,6 +1,8 @@
+package java101;
+
 import java.util.Scanner;
 
-public class main {
+public class Design {
     static void desen(int a)
     {
         if (a<=0)

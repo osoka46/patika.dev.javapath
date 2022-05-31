@@ -1,6 +1,8 @@
+package java101;
+
 import java.util.Scanner;
 
-public class main {
+public class PrimeNumber1_100 {
     public static void main(String[] args) {
         int count;
         Scanner girdi = new Scanner(System.in);

@@ -1,6 +1,8 @@
+package java101;
+
 import java.util.Scanner;
 
-public class main {
+public class FlightTicket {
     public static void main(String[] args) {
 
         //value assigned

@@ -1,4 +1,4 @@
-package java101.src;
+package java101.CalculateSalary;
 
 public class Employee {
     String name;

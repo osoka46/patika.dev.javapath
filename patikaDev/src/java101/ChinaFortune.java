@@ -1,6 +1,8 @@
+package java101;
+
 import java.util.Scanner;
 
-public class main {
+public class ChinaFortune {
     public static void main(String[] args) {
         //assigned scanner class
         Scanner girdi=new Scanner(System.in);
